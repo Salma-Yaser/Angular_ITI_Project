@@ -1,1 +1,54 @@
-<div>products works!</div>
+<div class="products-page">
+
+  <!-- === Filter Section === -->
+  <div class="filter-bar">
+    <div class="price-filter">
+      <label for="price">Max Price: {{ priceMax | currency:'USD' }}</label>
+      <input id="price" type="range"
+             min="0" max="100" step="1"
+             [(ngModel)]="priceMax"
+             (change)="applyFilters()" />
+    </div>
+
+    <div class="type-filter">
+      <label for="type">Food Type:</label>
+      <select id="type" [(ngModel)]="selectedType" (change)="applyFilters()">
+        <option *ngFor="let t of foodTypes" [value]="t">{{ t }}</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- === Products Grid === -->
+  <div class="grid">
+    <div class="card" *ngFor="let product of filtered">
+      <img [src]="product.image" [alt]="product.name" class="card-img" />
+      <h3 class="card-title">{{ product.name }}</h3>
+      <p class="price">{{ product.price | currency:'USD' }}</p>
+
+      <!-- Stock Status -->
+      <p class="stock"
+         [class.out]="product.stock === 0">
+        {{ product.stock > 0 ? 'In Stock' : 'Out of Stock' }}
+      </p>
+
+     
+      <button type="button"
+        class="btn"
+        [disabled]="product.stock === 0"
+        (click)="addToCart(product)">
+  Add to Cart
+</button>
+    </div>
+  </div>
+
+  <!-- === Top Rated === -->
+  <div class="top-rated">
+    <h2>Top Rated Products</h2>
+    <ul>
+      <li *ngFor="let p of topRated">
+        {{ p.name }} – {{ p.rating }}★
+      </li>
+    </ul>
+  </div>
+
+</div>
