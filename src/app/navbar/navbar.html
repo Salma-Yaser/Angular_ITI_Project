@@ -1,0 +1,72 @@
+<nav
+  class="navbar navbar-expand-lg navbar-light"
+  style="font-family: Lato, Arial, Helvetica, sans-serif"
+>
+  <a class="navbar-brand d-flex align-items-center" href="#" style="margin-left: 10%">
+    <img src="logo1.png" alt="Logo" style="height: 100px; width: 100px" />
+  </a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#mainNavbar"
+    aria-controls="mainNavbar"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-between" id="mainNavbar">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          [routerLink]="['./home']"
+          routerLinkActive="active-link"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >Home</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['./product']" routerLinkActive="active-link">Products</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['./about']" routerLinkActive="active-link"
+          >About&nbsp;Us</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['./contact']" routerLinkActive="active-link">Contact</a>
+      </li>
+    </ul>
+    <div class="d-flex align-items-center" style="margin-right: 10%">
+      <a class="nav-link" [routerLink]="['']">LOGIN</a>
+      /
+      <a class="nav-link" style="margin-right: 20px" [routerLink]="['']"> REGISTER</a>
+
+      <a href="#" class="mx-2" style="color: black">
+        <i class="fas fa-search"></i>
+      </a>
+      <a href="#" class="mx-2" style="color: black">
+        <i class="fas fa-shopping-cart"></i>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<style>
+  /* Add this style block to the same file or your global styles */
+  .active-link {
+    color: #5f6e1e !important;
+    font-weight: bold;
+  }
+</style>
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+/>
+<link
+  href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+  rel="stylesheet"
+/>

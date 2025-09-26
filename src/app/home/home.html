@@ -1,0 +1,525 @@
+<app-slider />
+<!--using grid make a section contains 2 pictures left and yext content right-->
+<section>
+  <div class="container mt-5 mb-5">
+    <div class="row">
+      <div class="col-md-6">
+        <!--2 images in a left side row 	278 × 417 px size-->
+        <div class="row">
+          <div class="col-6">
+            <img
+              src="wel2.jpg"
+              class="img-fluid mb-3"
+              alt="Image 1"
+              style="width: 278px; height: 417px; margin-top: 40px"
+            />
+          </div>
+          <div class="col-6">
+            <img
+              src="wel1.jpg"
+              class="img-fluid mb-3"
+              alt="Image 2"
+              style="width: 278px; height: 417px"
+            />
+          </div>
+        </div>
+      </div>
+      <!--text content all in center of it-->
+
+      <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+        <img src="rose.png" class="img-fluid mb-3" alt="Logo" style="max-width: 150px" />
+        <h2
+          style="
+            color: #5f6e1e;
+            font-family: Playfair Display;
+            font-size: 32px;
+            font-style: italic;
+            line-height: 50px;
+            font-weight: 400;
+          "
+        >
+          Welcome to Our Site
+        </h2>
+        <h1
+          style="
+            color: #000000;
+            font-family: Playfair Display;
+            font-size: 45px;
+            line-height: 60px;
+            font-weight: 400;
+          "
+        >
+          About Our <strong> Restaurant </strong>
+        </h1>
+        <p class="text-center" style="max-width: 500px; color: rgb(105, 104, 104)">
+          There are many variations of passages of Lorem Ipsum available, but the majority have
+          suffered alteration in some form, by injected humour, or randomised words which don't look
+          even slightly believable. If you are going to use a passage.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<br />
+<br />
+<!--section with grid left contains text content and right an img represent video-->
+<section>
+  <div class="container mb-5">
+    <div class="row">
+      <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+        <h1
+          style="
+            color: #000000;
+            font-family: Playfair Display;
+            font-size: 45px;
+            line-height: 60px;
+            font-weight: 400;
+            text-align: center;
+          "
+        >
+          Video journey <br />to <strong>Italian Classic cuisine.</strong>
+        </h1>
+        <p class="text-center" style="max-width: 500px; color: rgb(105, 104, 104)">
+          There are many variations of passages of Lorem Ipsum available, but the majority have
+          suffered alteration in some form, by injected humour, or randomised words which don't look
+          even slightly believable. If you are going to use a passage.
+        </p>
+        <!--2 buttons (read more , click me) in a row-->
+        <div class="d-flex gap-3 mt-3">
+          <button
+            class="btn btn-sm"
+            style="
+              background-color: #5f6e1e;
+              color: white;
+              font-family: Lato, Arial, Helvetica, sans-serif;
+              font-size: 14px;
+              font-weight: 300;
+              padding: 15px 30px;
+              border-radius: 0;
+              letter-spacing: 2px;
+            "
+          >
+            READ MORE
+          </button>
+          <button
+            class="btn btn-sm"
+            style="
+              background-color: transparent;
+              color: #5f6e1e;
+              font-family: Lato, Arial, Helvetica, sans-serif;
+              font-size: 14px;
+              font-weight: 300;
+              padding: 15px 30px;
+              border-radius: 0;
+              letter-spacing: 2px;
+              border: 1px solid #5f6e1e;
+            "
+          >
+            CLICK ME
+          </button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <!-- (Icon video with color white and a behind border on it ) on Image -->
+        <div class="position-relative d-flex justify-content-center align-items-center">
+          <img src="vid.jpg" class="img-fluid" alt="Video" style="width: 585px; height: 328px" />
+          <a href="#" class="position-absolute">
+            <!--icon color white -->
+            <i
+              class="fa fa-play-circle"
+              style="
+                font-size: 80px;
+                opacity: 0.8;
+                color: white;
+                text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                border-radius: 50%;
+                padding: 10px;
+                background-color: rgba(0, 0, 0, 0.3);
+                cursor: pointer;
+
+                transition: transform 0.3s ease;
+              "
+            ></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<br />
+
+<!-- Recommendations
+Our Featured Meals
+It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially uncha. -->4
+
+<section>
+  <div class="container mb-5">
+    <div class="text-center mb-4">
+      <h2
+        style="
+          color: #5f6e1e;
+          font-family: Playfair Display;
+          font-size: 32px;
+          font-style: italic;
+          line-height: 50px;
+          font-weight: 400;
+        "
+      >
+        Recommendations
+      </h2>
+      <h1
+        style="
+          color: #000000;
+          font-family: Playfair Display;
+          font-size: 45px;
+          line-height: 60px;
+          font-weight: 400;
+        "
+      >
+        Our Featured <strong> Meals </strong>
+      </h1>
+      <p class="text-center" style="max-width: 600px; color: rgb(105, 104, 104); margin: auto">
+        It has survived not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially uncha.
+      </p>
+    </div>
+    <!--grid contain 3 cards in a row-->
+    <div class="row">
+      <!--======================================-->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="c3.webp" class="card-img-top" alt="Meal 1" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Grilled Salmon</h5>
+            <p class="card-text text-muted">$25.00</p>
+            <p class="card-text">
+              A delicious grilled salmon fillet served with a side of fresh vegetables and lemon
+              butter sauce.
+            </p>
+            <button
+              class="btn btn-sm"
+              style="
+                background-color: #5f6e1e;
+                color: white;
+                font-family: Lato, Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                font-weight: 300;
+                padding: 10px 20px;
+                border-radius: 0;
+                letter-spacing: 2px;
+              "
+            >
+              ORDER NOW
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--======================================-->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="c2.webp" class="card-img-top" alt="Meal 2" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Pasta Primavera</h5>
+            <p class="card-text text-muted">$18.00</p>
+            <p class="card-text">
+              A classic Italian pasta dish with fresh vegetables, garlic, and olive oil, topped with
+              Parmesan cheese.
+            </p>
+            <button
+              class="btn btn-sm"
+              style="
+                background-color: #5f6e1e;
+                color: white;
+                font-family: Lato, Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                font-weight: 300;
+                padding: 10px 20px;
+                border-radius: 0;
+                letter-spacing: 2px;
+              "
+            >
+              ORDER NOW
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--======================================-->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="c4.webp" class="card-img-top" alt="Meal 3" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Caesar Salad</h5>
+            <p class="card-text text-muted">$12.00</p>
+            <p class="card-text">
+              A fresh Caesar salad with crisp romaine lettuce, croutons, Parmesan cheese, and Caesar
+              dressing.
+            </p>
+            <button
+              class="btn btn-sm"
+              style="
+                background-color: #5f6e1e;
+                color: white;
+                font-family: Lato, Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                font-weight: 300;
+                padding: 10px 20px;
+                border-radius: 0;
+                letter-spacing: 2px;
+              "
+            >
+              ORDER NOW
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--======================================-->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="c5.webp" class="card-img-top" alt="Meal 1" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Grilled Salmon</h5>
+            <p class="card-text text-muted">$25.00</p>
+            <p class="card-text">
+              A delicious grilled salmon fillet served with a side of fresh vegetables and lemon
+              butter sauce.
+            </p>
+            <button
+              class="btn btn-sm"
+              style="
+                background-color: #5f6e1e;
+                color: white;
+                font-family: Lato, Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                font-weight: 300;
+                padding: 10px 20px;
+                border-radius: 0;
+                letter-spacing: 2px;
+              "
+            >
+              ORDER NOW
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--======================================-->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="c6.webp" class="card-img-top" alt="Meal 1" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Grilled Salmon</h5>
+            <p class="card-text text-muted">$25.00</p>
+            <p class="card-text">
+              A delicious grilled salmon fillet served with a side of fresh vegetables and lemon
+              butter sauce.
+            </p>
+            <button
+              class="btn btn-sm"
+              style="
+                background-color: #5f6e1e;
+                color: white;
+                font-family: Lato, Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                font-weight: 300;
+                padding: 10px 20px;
+                border-radius: 0;
+                letter-spacing: 2px;
+              "
+            >
+              ORDER NOW
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!--======================================-->
+    </div>
+  </div>
+</section>
+
+<br />
+<!-- Hero Section with Grid Layout -->
+<!-- Make sure to include Bootstrap CSS in your project for styling -->
+<div class="container-fluid p-0 mb-5">
+  <div class="row g-2 row-full">
+    <div class="col-12 col-lg-2 p-0">
+      <div class="col-img-wrap" style="height: 100%">
+        <img id="left-hero-img" class="tile-img" src="grid-left.jpg" alt="left-hero" />
+        <div class="mask"></div>
+        <div class="left-panel" style="position: absolute; left: 18px; top: 24px">
+          <div class="kicker">Check our</div>
+
+          <div class="left-title play">New<br />Arrivals<br />to the<br />Shop</div>
+          <a href="#" class="btn btn-sm btn-outline-light mt-3">Read more</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-4 p-0">
+      <div class="row mosaic" style="height: 100%; min-height: 100%">
+        <div class="col-6 p-0" style="height: 50%; min-height: 200px">
+          <div class="col-img-wrap">
+            <img
+              id="tile1-img"
+              class="tile-img"
+              src="grid-u.jpg"
+              alt="tile-1"
+              style="object-position: 18% 18%"
+            />
+          </div>
+        </div>
+
+        <div
+          class="col-6 p-0 text-center text-white text-tile"
+          style="height: 50%; min-height: 200px"
+        >
+          <div class="text-inner">
+            <div class="kicker">Organization</div>
+            <h3 class="play">Dinner's</h3>
+            <p class="mb-0" style="color: rgba(255, 255, 255, 0.8)">
+              Various versions have evolved information with turnkey.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="col-6 p-0 text-center text-white text-tile"
+          style="height: 50%; min-height: 200px"
+        >
+          <div class="text-inner">
+            <div class="kicker">Your Personal</div>
+            <h3 class="play">Lifestyle</h3>
+            <p class="mb-0" style="color: rgba(255, 255, 255, 0.8)">
+              Synistically synhesize andated information with turnkey.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-6 p-0" style="height: 50%; min-height: 200px">
+          <div class="col-img-wrap">
+            <img
+              id="tile2-img"
+              class="tile-img"
+              src="grid-b.jpg"
+              alt="tile-2"
+              style="object-position: 60% 78%"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-6 p-0">
+      <div class="col-img-wrap" style="height: 100%">
+        <img id="right-hero-img" class="tile-img" src="grid-right.jpg" alt="right-hero" />
+        <div class="mask"></div>
+        <div
+          class="right-panel text-center"
+          style="
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+          "
+        >
+          <div class="kicker">Discover</div>
+          <div class="right-title play">Our Story</div>
+          <a href="#" class="btn btn-sm btn-outline-light mt-3">Read more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br />
+<!--feedback slider-->
+<div class="mt-5 mb-5" style="background-color: #f8f9fa; padding: 40px 0">
+  <!--Testimonials
+From our Visitors-->
+  <div class="text-center mb-4">
+    <h2
+      style="
+        color: #5f6e1e;
+        font-family: Playfair Display;
+        font-size: 35px;
+        font-style: italic;
+        line-height: 50px;
+        font-weight: 500;
+      "
+    >
+      Testimonials
+    </h2>
+    <h1
+      style="
+        color: #000000;
+        font-family: Playfair Display;
+        font-size: 45px;
+        line-height: 60px;
+        font-weight: 250;
+      "
+    >
+      From our <strong> Visitors </strong>
+    </h1>
+    <div class="row">
+      <div class="col-md-8 mx-auto">
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="testimonial-slide">
+                <img src="person1.jpg" alt="Testimonial 1" class="rounded-circle" />
+                <p>
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum urna
+                  libero, et ultricies sapien tincidunt sit amet."
+                </p>
+                <p><strong>John Doe</strong>, CEO at Company ABC</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial-slide">
+                <img src="person2.jpg" alt="Testimonial 2" class="rounded-circle" />
+                <p>
+                  "Sed eget eros quis urna viverra tincidunt eget a mi. Maecenas suscipit libero
+                  ligula."
+                </p>
+                <p><strong>Jane Smith</strong>, CTO at Company XYZ</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial-slide">
+                <img src="person3.jpg" alt="Testimonial 3" class="rounded-circle" />
+                <p>
+                  "Praesent euismod, nisi vel consectetur interdum, nisl nisi aliquet nunc, a
+                  fringilla nunc urna at justo."
+                </p>
+                <p><strong>Mike Johnson</strong>, Manager at Business 123</p>
+              </div>
+              <!-- Add more testimonial items as needed -->
+            </div>
+            <div class="text-center">
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#testimonialCarousel"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#testimonialCarousel"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,135 @@
+.testimonial-carousel {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.testimonial-slide {
+  text-align: center;
+  padding: 20px;
+}
+
+.testimonial-slide img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  color: #fff;
+}
+
+/* Additional styling for testimonial text */
+:root {
+  --accent: #ffffff;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Montserrat, system-ui, Segoe UI, Arial;
+  background: #111;
+  color: #fff;
+}
+
+.row-full {
+  min-height: 100vh;
+}
+.tile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* overlay panels */
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overlay-inner {
+  max-width: 520px;
+  padding: 24px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.6));
+  text-align: center;
+}
+
+/* left column text */
+.left-panel {
+  position: relative;
+  color: #fff;
+  padding: 32px;
+}
+.left-panel .left-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+.left-panel .btn-outline-light {
+  border-color: rgba(255, 255, 255, 0.35);
+}
+.left-panel .mask {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 20%, transparent 60%);
+}
+
+/* mosaic tiles */
+.mosaic .text-tile {
+  background: #0c0c0c;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mosaic .text-inner {
+  max-width: 260px;
+  text-align: center;
+}
+.kicker {
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+.play {
+  font-family: 'Playfair Display', serif;
+}
+
+/* ensure columns are full height and images stretch */
+.col-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 991.98px) {
+  .row-full {
+    min-height: auto;
+  }
+  .col-img-wrap {
+    height: 320px;
+  }
+  .left-panel .left-title {
+    font-size: 28px;
+  }
+  .overlay-inner {
+    max-width: 360px;
+  }
+}
