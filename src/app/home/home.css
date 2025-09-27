@@ -119,6 +119,18 @@ body {
   height: 100%;
 }
 
+/* Fly-in animation styles */
+.fly-in-init {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 1.2s cubic-bezier(0.4, 0, 0.2, 1), transform 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fly-in-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media (max-width: 991.98px) {
   .row-full {
     min-height: auto;

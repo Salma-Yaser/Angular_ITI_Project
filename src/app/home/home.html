@@ -1,10 +1,10 @@
 <app-slider />
-<!--using grid make a section contains 2 pictures left and yext content right-->
+
 <section>
   <div class="container mt-5 mb-5">
     <div class="row">
       <div class="col-md-6">
-        <!--2 images in a left side row 	278 × 417 px size-->
+        <!-- images -->
         <div class="row">
           <div class="col-6">
             <img
@@ -24,9 +24,8 @@
           </div>
         </div>
       </div>
-      <!--text content all in center of it-->
-
-      <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+      <!-- text content -->
+      <div class="col-md-6 d-flex flex-column justify-content-center align-items-center" appFlyIn>
         <img src="rose.png" class="img-fluid mb-3" alt="Logo" style="max-width: 150px" />
         <h2
           style="
@@ -61,13 +60,12 @@
   </div>
 </section>
 
-<br />
-<br />
-<!--section with grid left contains text content and right an img represent video-->
+<br /><br />
+
 <section>
   <div class="container mb-5">
     <div class="row">
-      <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+      <div class="col-md-6 d-flex flex-column justify-content-center align-items-center" appFlyIn>
         <h1
           style="
             color: #000000;
@@ -85,7 +83,6 @@
           suffered alteration in some form, by injected humour, or randomised words which don't look
           even slightly believable. If you are going to use a passage.
         </p>
-        <!--2 buttons (read more , click me) in a row-->
         <div class="d-flex gap-3 mt-3">
           <button
             class="btn btn-sm"
@@ -121,11 +118,10 @@
         </div>
       </div>
       <div class="col-md-6">
-        <!-- (Icon video with color white and a behind border on it ) on Image -->
+        <!-- video image -->
         <div class="position-relative d-flex justify-content-center align-items-center">
           <img src="vid.jpg" class="img-fluid" alt="Video" style="width: 585px; height: 328px" />
           <a href="#" class="position-absolute">
-            <!--icon color white -->
             <i
               class="fa fa-play-circle"
               style="
@@ -137,7 +133,6 @@
                 padding: 10px;
                 background-color: rgba(0, 0, 0, 0.3);
                 cursor: pointer;
-
                 transition: transform 0.3s ease;
               "
             ></i>
@@ -150,13 +145,9 @@
 
 <br />
 
-<!-- Recommendations
-Our Featured Meals
-It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially uncha. -->4
-
 <section>
   <div class="container mb-5">
-    <div class="text-center mb-4">
+    <div class="text-center mb-4" appFlyIn>
       <h2
         style="
           color: #5f6e1e;
@@ -185,13 +176,10 @@ It has survived not only five centuries, but also the leap into electronic types
         remaining essentially uncha.
       </p>
     </div>
-    <!--grid contain 3 cards in a row-->
     <div class="row">
-      <!--======================================-->
       <div class="col-md-4 mb-4">
         <div class="card h-100">
-          <img src="c3.webp" class="card-img-top" alt="Meal 1" />
-          <div class="card-body text-center">
+          <div class="card-body text-center" appFlyIn>
             <h5 class="card-title">Grilled Salmon</h5>
             <p class="card-text text-muted">$25.00</p>
             <p class="card-text">
@@ -216,11 +204,9 @@ It has survived not only five centuries, but also the leap into electronic types
           </div>
         </div>
       </div>
-      <!--======================================-->
       <div class="col-md-4 mb-4">
         <div class="card h-100">
-          <img src="c2.webp" class="card-img-top" alt="Meal 2" />
-          <div class="card-body text-center">
+          <div class="card-body text-center" appFlyIn>
             <h5 class="card-title">Pasta Primavera</h5>
             <p class="card-text text-muted">$18.00</p>
             <p class="card-text">
@@ -245,11 +231,9 @@ It has survived not only five centuries, but also the leap into electronic types
           </div>
         </div>
       </div>
-      <!--======================================-->
       <div class="col-md-4 mb-4">
         <div class="card h-100">
-          <img src="c4.webp" class="card-img-top" alt="Meal 3" />
-          <div class="card-body text-center">
+          <div class="card-body text-center" appFlyIn>
             <h5 class="card-title">Caesar Salad</h5>
             <p class="card-text text-muted">$12.00</p>
             <p class="card-text">
@@ -274,88 +258,26 @@ It has survived not only five centuries, but also the leap into electronic types
           </div>
         </div>
       </div>
-      <!--======================================-->
-      <div class="col-md-4 mb-4">
-        <div class="card h-100">
-          <img src="c5.webp" class="card-img-top" alt="Meal 1" />
-          <div class="card-body text-center">
-            <h5 class="card-title">Grilled Salmon</h5>
-            <p class="card-text text-muted">$25.00</p>
-            <p class="card-text">
-              A delicious grilled salmon fillet served with a side of fresh vegetables and lemon
-              butter sauce.
-            </p>
-            <button
-              class="btn btn-sm"
-              style="
-                background-color: #5f6e1e;
-                color: white;
-                font-family: Lato, Arial, Helvetica, sans-serif;
-                font-size: 14px;
-                font-weight: 300;
-                padding: 10px 20px;
-                border-radius: 0;
-                letter-spacing: 2px;
-              "
-            >
-              ORDER NOW
-            </button>
-          </div>
-        </div>
-      </div>
-      <!--======================================-->
-      <div class="col-md-4 mb-4">
-        <div class="card h-100">
-          <img src="c6.webp" class="card-img-top" alt="Meal 1" />
-          <div class="card-body text-center">
-            <h5 class="card-title">Grilled Salmon</h5>
-            <p class="card-text text-muted">$25.00</p>
-            <p class="card-text">
-              A delicious grilled salmon fillet served with a side of fresh vegetables and lemon
-              butter sauce.
-            </p>
-            <button
-              class="btn btn-sm"
-              style="
-                background-color: #5f6e1e;
-                color: white;
-                font-family: Lato, Arial, Helvetica, sans-serif;
-                font-size: 14px;
-                font-weight: 300;
-                padding: 10px 20px;
-                border-radius: 0;
-                letter-spacing: 2px;
-              "
-            >
-              ORDER NOW
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!--======================================-->
+      <!-- Add more cards as needed, each card-body with appFlyIn -->
     </div>
   </div>
 </section>
 
 <br />
-<!-- Hero Section with Grid Layout -->
-<!-- Make sure to include Bootstrap CSS in your project for styling -->
+
 <div class="container-fluid p-0 mb-5">
   <div class="row g-2 row-full">
     <div class="col-12 col-lg-2 p-0">
       <div class="col-img-wrap" style="height: 100%">
         <img id="left-hero-img" class="tile-img" src="grid-left.jpg" alt="left-hero" />
         <div class="mask"></div>
-        <div class="left-panel" style="position: absolute; left: 18px; top: 24px">
+        <div class="left-panel" style="position: absolute; left: 18px; top: 24px" appFlyIn>
           <div class="kicker">Check our</div>
-
           <div class="left-title play">New<br />Arrivals<br />to the<br />Shop</div>
           <a href="#" class="btn btn-sm btn-outline-light mt-3">Read more</a>
         </div>
       </div>
     </div>
-
     <div class="col-12 col-lg-4 p-0">
       <div class="row mosaic" style="height: 100%; min-height: 100%">
         <div class="col-6 p-0" style="height: 50%; min-height: 200px">
@@ -369,12 +291,11 @@ It has survived not only five centuries, but also the leap into electronic types
             />
           </div>
         </div>
-
         <div
           class="col-6 p-0 text-center text-white text-tile"
           style="height: 50%; min-height: 200px"
         >
-          <div class="text-inner">
+          <div class="text-inner" appFlyIn>
             <div class="kicker">Organization</div>
             <h3 class="play">Dinner's</h3>
             <p class="mb-0" style="color: rgba(255, 255, 255, 0.8)">
@@ -382,12 +303,11 @@ It has survived not only five centuries, but also the leap into electronic types
             </p>
           </div>
         </div>
-
         <div
           class="col-6 p-0 text-center text-white text-tile"
           style="height: 50%; min-height: 200px"
         >
-          <div class="text-inner">
+          <div class="text-inner" appFlyIn>
             <div class="kicker">Your Personal</div>
             <h3 class="play">Lifestyle</h3>
             <p class="mb-0" style="color: rgba(255, 255, 255, 0.8)">
@@ -395,7 +315,6 @@ It has survived not only five centuries, but also the leap into electronic types
             </p>
           </div>
         </div>
-
         <div class="col-6 p-0" style="height: 50%; min-height: 200px">
           <div class="col-img-wrap">
             <img
@@ -409,7 +328,6 @@ It has survived not only five centuries, but also the leap into electronic types
         </div>
       </div>
     </div>
-
     <div class="col-12 col-lg-6 p-0">
       <div class="col-img-wrap" style="height: 100%">
         <img id="right-hero-img" class="tile-img" src="grid-right.jpg" alt="right-hero" />
@@ -423,6 +341,7 @@ It has survived not only five centuries, but also the leap into electronic types
             transform: translate(-50%, -50%);
             color: white;
           "
+          appFlyIn
         >
           <div class="kicker">Discover</div>
           <div class="right-title play">Our Story</div>
@@ -434,11 +353,9 @@ It has survived not only five centuries, but also the leap into electronic types
 </div>
 
 <br />
-<!--feedback slider-->
+
 <div class="mt-5 mb-5" style="background-color: #f8f9fa; padding: 40px 0">
-  <!--Testimonials
-From our Visitors-->
-  <div class="text-center mb-4">
+  <div class="text-center mb-4" appFlyIn>
     <h2
       style="
         color: #5f6e1e;
@@ -467,7 +384,7 @@ From our Visitors-->
         <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <div class="testimonial-slide">
+              <div class="testimonial-slide" appFlyIn>
                 <img src="person1.jpg" alt="Testimonial 1" class="rounded-circle" />
                 <p>
                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum urna
@@ -477,7 +394,7 @@ From our Visitors-->
               </div>
             </div>
             <div class="carousel-item">
-              <div class="testimonial-slide">
+              <div class="testimonial-slide" appFlyIn>
                 <img src="person2.jpg" alt="Testimonial 2" class="rounded-circle" />
                 <p>
                   "Sed eget eros quis urna viverra tincidunt eget a mi. Maecenas suscipit libero
@@ -487,7 +404,7 @@ From our Visitors-->
               </div>
             </div>
             <div class="carousel-item">
-              <div class="testimonial-slide">
+              <div class="testimonial-slide" appFlyIn>
                 <img src="person3.jpg" alt="Testimonial 3" class="rounded-circle" />
                 <p>
                   "Praesent euismod, nisi vel consectetur interdum, nisl nisi aliquet nunc, a
@@ -495,8 +412,8 @@ From our Visitors-->
                 </p>
                 <p><strong>Mike Johnson</strong>, Manager at Business 123</p>
               </div>
-              <!-- Add more testimonial items as needed -->
             </div>
+            <!-- Add more testimonial items as needed -->
             <div class="text-center">
               <button
                 class="carousel-control-prev"

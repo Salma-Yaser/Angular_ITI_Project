@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
-// import lottie if needed
-// import lottie from 'lottie-web';
+import { FlyInDirective } from '../animation/fly-in.directive';
 
 @Component({
   selector: 'app-not-found',
   standalone: true,
-  imports: [],
+  imports: [FlyInDirective],
   templateUrl: './not-found.html',
   styleUrl: './not-found.css'
 })

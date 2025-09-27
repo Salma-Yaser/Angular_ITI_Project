@@ -9,15 +9,13 @@ import { Login } from './login/login';
 
 
 export const routes: Routes = [
-    {path:'' , redirectTo:'home' , pathMatch:'full'},
-    {path:'home' , component:Home},
-    {path:'about' , component:About},
-    {path:'contact' , component:Contact},
-    {path:'product' , component:Products },
-      { path: 'cart', component: CartComponent },
-      {path:'LOGIN' , component:Login},
-          {path:'**' , component:NotFound}
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: Home },
+  { path: 'about', component: About },
+  { path: 'contact', component: Contact },
+  { path: 'product', component: Products },
+  { path: 'cart', component: CartComponent },
+  { path: 'LOGIN', component: Login },
+  { path: '**', component: NotFound }
 
-
-  
 ];
