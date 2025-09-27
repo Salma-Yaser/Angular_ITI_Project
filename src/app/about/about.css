@@ -1,1 +1,43 @@
+/* زرار مخصص */
+.custom-btn {
+  background-color: #556b2f;
+  transition: background-color 0.3s ease;
+}
 
+.custom-btn:hover {
+  background-color: #445522;
+}
+
+/* أيقونات Font Awesome */
+.icon-utensils {
+  color: #1d3557;
+  font-size: 28px;
+}
+
+.icon-fire {
+  color: #e63946;
+  font-size: 28px;
+}
+
+/* الكروت */
+.dish-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.dish-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.dish-card img {
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.dish-card:hover img {
+  transform: scale(1.05);
+}

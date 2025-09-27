@@ -1,1 +1,131 @@
-contact works!
+<section class="container my-5">
+  <div class="row g-4">
+    <div class="col-lg-6">
+      <div class="p-4 bg-white shadow rounded-4">
+        <h2 class="mb-3">Contact Us</h2>
+        <p>
+          We’d love to hear from you! Fill in the form below and we will get back to you shortly.
+        </p>
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Your Name" required />
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Your Email" required />
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <div class="p-4 bg-white shadow rounded-4">
+        <h6 class="text-uppercase text-muted">Information Questions</h6>
+        <h2 class="mb-4">Frequently Asked Questions</h2>
+
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq1"
+              >
+                Will I receive the same product that I see in the picture?
+              </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Yes! We ensure that the products you receive match the pictures shown on our
+                website. If you find any major difference, you can request a return or replacement
+                easily.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq2"
+              >
+                Where can I view my sales receipt?
+              </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                You can view and download your sales receipt from your account page under the
+                'Orders' section.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq3"
+              >
+                How can I return an item?
+              </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Returning an item is easy. Go to your order history, select the item, and click on
+                'Request Return'.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq4"
+              >
+                Will you restock items indicated as “out of stock?”
+              </button>
+            </h2>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Yes! Most of our popular products are restocked within 1-2 weeks. You can subscribe
+                to back-in-stock notifications on the product page.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq5"
+              >
+                Where can I ship my order?
+              </button>
+            </h2>
+            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                We ship worldwide! During checkout, you can select your country and see available
+                shipping options along with estimated delivery time.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

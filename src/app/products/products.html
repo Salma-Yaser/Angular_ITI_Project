@@ -1,54 +1,70 @@
-<div class="products-page">
-
-  <!-- === Filter Section === -->
-  <div class="filter-bar">
-    <div class="price-filter">
-      <label for="price">Max Price: {{ priceMax | currency:'USD' }}</label>
-      <input id="price" type="range"
-             min="0" max="100" step="1"
-             [(ngModel)]="priceMax"
-             (change)="applyFilters()" />
+<div class="products-layout">
+  <!-- === Sidebar Filter === -->
+  <aside class="sidebar">
+    <h3>Filter Products</h3>
+    <div class="filter-group">
+      <label for="price">Max Price</label>
+      <input
+        id="price"
+        type="range"
+        min="0"
+        max="100"
+        step="1"
+        [value]="priceMax"
+        #priceInput
+        (input)="onPriceChange(priceInput.value)"
+      />
+      <span>{{ priceMax | currency : 'USD' }}</span>
     </div>
-
-    <div class="type-filter">
-      <label for="type">Food Type:</label>
-      <select id="type" [(ngModel)]="selectedType" (change)="applyFilters()">
+    <div class="filter-group">
+      <label for="type">Food Type</label>
+      <select id="type" [value]="selectedType" #typeInput (change)="onTypeChange(typeInput.value)">
         <option *ngFor="let t of foodTypes" [value]="t">{{ t }}</option>
       </select>
     </div>
-  </div>
 
-  <!-- === Products Grid === -->
-  <div class="grid">
-    <div class="card" *ngFor="let product of filtered">
-      <img [src]="product.image" [alt]="product.name" class="card-img" />
-      <h3 class="card-title">{{ product.name }}</h3>
-      <p class="price">{{ product.price | currency:'USD' }}</p>
+    <!-- === Top Rated Section (Sidebar) === -->
+    <section class="top-rated-section">
+      <h3>Top Rated Products</h3>
+      <ul class="top-rated-list">
+        <li *ngFor="let p of topRated" class="top-rated-item">
+          <img [src]="p.image" [alt]="p.name" class="top-rated-img" />
+          <div class="top-rated-info">
+            <span class="top-rated-name">{{ p.name }}</span>
+            <span class="top-rated-price">{{ p.price | currency : 'USD' }}</span>
+            <span class="top-rated-stars">
+              <ng-container *ngFor="let star of [1, 2, 3, 4, 5]">
+                <span [class.filled]="star <= p.rating">&#9733;</span>
+              </ng-container>
+            </span>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </aside>
 
-      <!-- Stock Status -->
-      <p class="stock"
-         [class.out]="product.stock === 0">
-        {{ product.stock > 0 ? 'In Stock' : 'Out of Stock' }}
-      </p>
-
-     
-      <button type="button"
-        class="btn"
-        [disabled]="product.stock === 0"
-        (click)="addToCart(product)">
-  Add to Cart
-</button>
+  <!-- === Main Content === -->
+  <main class="main-content">
+    <h2>Products</h2>
+    <div class="products-grid">
+      <div class="card product-card h-100" *ngFor="let product of filtered">
+        <img [src]="product.image" [alt]="product.name" class="card-img-top product-img" />
+        <div class="card-body text-center">
+          <h5 class="card-title">{{ product.name }}</h5>
+          <p class="product-price card-text text-muted">{{ product.price | currency : 'USD' }}</p>
+          <p class="product-stock card-text" [class.out]="product.stock === 0">
+            {{ product.stock > 0 ? 'In Stock' : 'Out of Stock' }}
+          </p>
+          <button
+            type="button"
+            class="btn btn-sm product-btn"
+            [disabled]="product.stock === 0"
+            (click)="addToCart(product)"
+          >
+            ADD TO CART
+          </button>
+        </div>
+      </div>
     </div>
-  </div>
-
-  <!-- === Top Rated === -->
-  <div class="top-rated">
-    <h2>Top Rated Products</h2>
-    <ul>
-      <li *ngFor="let p of topRated">
-        {{ p.name }} – {{ p.rating }}★
-      </li>
-    </ul>
-  </div>
-
+  </main>
 </div>
