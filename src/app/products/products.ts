@@ -17,7 +17,7 @@ interface Product {
 @Component({
   selector: 'app-products',
   standalone: true,
-  imports: [FormsModule, CommonModule, RouterLink], // <-- FormsModule must be here
+  imports: [FormsModule, CommonModule, RouterLink], 
   templateUrl: './products.html',
   styleUrls: ['./products.css']
 })

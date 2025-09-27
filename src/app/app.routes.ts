@@ -5,6 +5,7 @@ import { Contact } from './contact/contact';
 import { Products } from './products/products';
 import { NotFound } from './not-found/not-found';
 import { CartComponent } from './cart/CartComponent';
+import { Login } from './login/login';
 
 
 export const routes: Routes = [
@@ -14,6 +15,7 @@ export const routes: Routes = [
     {path:'contact' , component:Contact},
     {path:'product' , component:Products },
       { path: 'cart', component: CartComponent },
+      {path:'LOGIN' , component:Login},
           {path:'**' , component:NotFound}
 
 

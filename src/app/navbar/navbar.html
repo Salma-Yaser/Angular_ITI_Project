@@ -40,16 +40,21 @@
       </li>
     </ul>
     <div class="d-flex align-items-center" style="margin-right: 10%">
-      <a class="nav-link" [routerLink]="['']">LOGIN</a>
-      /
-      <a class="nav-link" style="margin-right: 20px" [routerLink]="['']"> REGISTER</a>
+      <a
+        class="nav-link"
+        style="margin-right: 20px"
+        [routerLink]="['./LOGIN']"
+        routerLinkActive="active-link"
+      >
+        LOGIN/REGISTER</a
+      >
 
       <a href="#" class="mx-2" style="color: black">
         <i class="fas fa-search"></i>
       </a>
-    <a [routerLink]="['/cart']" routerLinkActive="active-link" class="mx-2" style="color: black">
-  <i class="fas fa-shopping-cart"></i>
-</a>
+      <a [routerLink]="['/cart']" routerLinkActive="active-link" class="mx-2" style="color: black">
+        <i class="fas fa-shopping-cart"></i>
+      </a>
     </div>
   </div>
 </nav>
